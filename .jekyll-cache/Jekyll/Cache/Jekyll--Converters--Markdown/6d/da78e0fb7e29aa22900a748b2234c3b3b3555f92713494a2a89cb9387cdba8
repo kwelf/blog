@@ -1,4 +1,4 @@
-I"�	<p>Olá, seja bem vindo ao meu primeiro post no blog. Hoje iremos falar do Pygame e como instalar no seu Linux. Será uma tarefa simples, tenha certeza disso. 
+I"�	<p>Olá, seja bem vindo ao meu primeiro post no blog. Hoje iremos falar do Pygame e como instalar no seu Linux. Será uma tarefa simples, tenha certeza disso. 
 A partir daqui eu irei levar em conta que você já instalou o python em sua distro.
 Em primeiro lugar iremos instalar o PiP, acessório essencial para gerenciar instalações de bibliotecas como Pygame dentre outras.</p>
 <h2 id="instalando-o-pip">Instalando o PiP</h2>
@@ -71,7 +71,7 @@ No Ubuntu digite:</p>
 
 <p>Pronto, após isso feche a janela e seu Pycharm está configurado com o pygame.</p>
 
-<p><img src="/assets/img/pycharm.png" alt="Pycharm Pygame" /></p>
+<p><img src="/blog/assets/img/pycharm.png" alt="Pycharm Pygame" /></p>
 
 <p>Obrigado e bons estudos.</p>
 :ET
