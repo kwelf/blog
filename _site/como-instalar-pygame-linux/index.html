@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Como instalar Pygame no Linux - Olá, eu sou Diego Herculano!</title>
+
+  <!-- Edit site and author settings in `_config.yml` to make the social details your own -->
+
+    <meta content="Olá, eu sou Diego Herculano!" property="og:site_name">
+  
+    <meta content="Como instalar Pygame no Linux" property="og:title">
+  
+  
+    <meta content="article" property="og:type">
+  
+  
+    <meta content="Como instalar Pygame no Linux utilizando Ubuntu ou Archlinux" property="og:description">
+  
+  
+    <meta content="http://localhost:4000/como-instalar-pygame-linux/" property="og:url">
+  
+  
+    <meta content="2019-11-06T11:32:20-03:00" property="article:published_time">
+    <meta content="http://localhost:4000/about/" property="article:author">
+  
+  
+    <meta content="http://localhost:4000/assets/img/pygame.png" property="og:image">
+  
+  
+    
+  
+  
+    
+    <meta content="Python" property="article:tag">
+    
+    <meta content="Pygame" property="article:tag">
+    
+  
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@">
+    <meta name="twitter:creator" content="@twitter">
+  
+    <meta name="twitter:title" content="Como instalar Pygame no Linux">
+  
+  
+    <meta name="twitter:url" content="http://localhost:4000/como-instalar-pygame-linux/">
+  
+  
+    <meta name="twitter:description" content="Como instalar Pygame no Linux utilizando Ubuntu ou Archlinux">
+  
+  
+    <meta name="twitter:image:src" content="http://localhost:4000/assets/img/pygame.png">
+  
+
+	<meta name="description" content="Como instalar Pygame no Linux utilizando Ubuntu ou Archlinux">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta property="og:image" content="">
+	<link rel="shortcut icon" href="/assets/img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="/assets/img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicon/apple-touch-icon-144x144.png">
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#263959">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#263959">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#263959">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="/assets/fonts/font-awesome/css/font-awesome.min.css">
+	<!-- Styles -->
+	<link rel="stylesheet" href="/assets/css/main.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <aside class="sidebar">
+  <header>
+    <div class="about">
+      <div class="cover-author-image">
+        <a href="/"><img src="/assets/img/diego.jpeg" alt="Diego Herculano"></a>
+      </div>
+      <div class="author-name">Diego Herculano</div>
+      <p>Estudante de Sistemas de Informação e programador. Sempre com fome de aprender!</p>
+    </div>
+  </header> <!-- End Header -->
+  <footer>
+    <section class="contact">
+      <h3 class="contact-title">Contact me</h3>
+      <ul>
+        
+          <li><a href="https://twitter.com/twitter" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        
+        
+          <li><a href="https://facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        
+        
+          <li class="github"><a href="http://github.com/kwelf" target="_blank"><i class="fa fa-github"></i></a></li>
+        
+        
+          <li class="linkedin"><a href="https://in.linkedin.com/in/diego-herculano-7ba5a955" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+        
+        
+          <li class="email"><a href="mailto:diegoherculanojp@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
+        
+      </ul>
+    </section> <!-- End Section Contact -->
+    <div class="copyright">
+      <p>2019 &copy; Diego Herculano</p>
+    </div>
+  </footer> <!-- End Footer -->
+</aside> <!-- End Sidebar -->
+<div class="content-box clearfix">
+  <article class="article-page">
+  <div class="page-content">
+    
+    <div class="page-cover-image">
+      <figure>
+        <img class="page-image" src=/assets/img/pygame.png alt="Como instalar Pygame no Linux">
+        
+      </figure>
+    </div> <!-- End Page Cover Image -->
+    
+    <div class="wrap-content">
+      <header class="header-page">
+        <h1 class="page-title">Como instalar Pygame no Linux</h1>
+        <div class="page-date"><span>2019, Nov 06&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+      </header>
+      <p>Olá, seja bem vindo ao meu primeiro post no blog. Hoje iremos falar do Pygame e como instalar no seu Linux. Será uma tarefa simples, tenha certeza disso. 
+A partir daqui eu irei levar em conta que você já instalou o python em sua distro.
+Em primeiro lugar iremos instalar o PiP, acessório essencial para gerenciar instalações de bibliotecas como Pygame dentre outras.</p>
+<h2 id="instalando-o-pip">Instalando o PiP</h2>
+<p>Para instalar o PiP utilizando o terminal é muito fácil.
+No Ubuntu digite:</p>
+
+<blockquote>
+  <p>sudo apt install python3-pip</p>
+</blockquote>
+
+<p>Neste caso instalaremos o PiP para seu python versão 3, no Ubuntu.</p>
+
+<p>Diferentemente será no Archlinux conforme vemos:</p>
+
+<blockquote>
+  <p>sudo pacman -S python-pip</p>
+</blockquote>
+
+<p>Deste modo, não precisamos especificar o python para a versão 3 pois ele já é por padrão.</p>
+
+<h2 id="instalando-pygame-através-do-pip">Instalando Pygame através do PiP</h2>
+<p>Após instalado o PiP, vamos instalar o Pygame.
+No Ubuntu digite:</p>
+
+<blockquote>
+  <p>python3 -m pip install pygame –user</p>
+</blockquote>
+
+<p>Perceba que estamos instalando a biblioteca pygame apenas para o usuário, pela fato de utilizarmos o argumento “–user”.</p>
+
+<p>No Archlinux digite:</p>
+
+<blockquote>
+  <p>python -m pip install pygame –user</p>
+</blockquote>
+
+<p>Praticamente identico, apenas retirando o 3, pois no arch não precisamos especificar o python 3 pois o mesmo já é por padrão.</p>
+
+<h2 id="bônus-instalando-no-pycharm">Bônus: Instalando no Pycharm</h2>
+
+<p>Entendo que você já tenha o Pycharm instalado em sua distro, desta forma siga os passos:</p>
+
+<blockquote>
+  <p>Passo 1: Clique em File</p>
+</blockquote>
+
+<blockquote>
+  <p>Passo 2: Clique em Settings</p>
+</blockquote>
+
+<blockquote>
+  <p>Passo 3: Clique em Project: (Nome do seu projeto)</p>
+</blockquote>
+
+<blockquote>
+  <p>Passo 4: Clique em Project Interpreter</p>
+</blockquote>
+
+<blockquote>
+  <p>Passo 5: Clique no ícone de + (mais) ao lado direito</p>
+</blockquote>
+
+<blockquote>
+  <p>Passo 6: Digite Pygame no campo de busca</p>
+</blockquote>
+
+<blockquote>
+  <p>Passo 7: Clique em Install Package e AGUARDE até a tela verde de instalação concluída.</p>
+</blockquote>
+
+<p>Pronto, após isso feche a janela e seu Pycharm está configurado com o pygame.</p>
+
+<p><img src="/assets/img/pycharm.png" alt="Pycharm Pygame" /></p>
+
+<p>Obrigado e bons estudos.</p>
+
+      <div class="page-footer">
+        <div class="page-share">
+          <a href="https://twitter.com/intent/tweet?text=Como instalar Pygame no Linux&url=http://localhost:4000/como-instalar-pygame-linux/" title="Share on Twitter" rel="nofollow" target="_blank">Twitter</a>
+          <a href="https://facebook.com/sharer.php?u=http://localhost:4000/como-instalar-pygame-linux/" title="Share on Facebook" rel="nofollow" target="_blank">Facebook</a>
+          <a href="https://plus.google.com/share?url=http://localhost:4000/como-instalar-pygame-linux/" title="Share on Google+" rel="nofollow" target="_blank">Google+</a>
+        </div>
+        <div class="page-tag">
+          
+            <a href="/tags#Python" class="tag">&#35; Python</a>
+          
+            <a href="/tags#Pygame" class="tag">&#35; Pygame</a>
+          
+        </div>
+      </div>
+      <section class="comment-area">
+  <div class="comment-wrapper">
+    
+    <div id="disqus_thread" class="article-comments"></div>
+    <script>
+      (function() {
+          var d = document, s = d.createElement('script');
+          s.src = '//diegoh.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    
+  </div>
+</section> <!-- End Comment Area -->
+
+    </div> <!-- End Wrap Content -->
+  </div> <!-- End Page Content -->
+</article> <!-- End Article Page -->
+
+</div>
+
+  </div>
+  
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', '', 'auto');
+  ga('send', 'pageview');
+</script> <!-- End Analytics -->
+
+</body>
+</html>

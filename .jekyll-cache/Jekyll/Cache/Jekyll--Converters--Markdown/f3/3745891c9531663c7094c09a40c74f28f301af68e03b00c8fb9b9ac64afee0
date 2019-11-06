@@ -1,0 +1,77 @@
+I"�	<p>Olá, seja bem vindo ao meu primeiro post no blog. Hoje iremos falar do Pygame e como instalar no seu Linux. Será uma tarefa simples, tenha certeza disso. 
+A partir daqui eu irei levar em conta que você já instalou o python em sua distro.
+Em primeiro lugar iremos instalar o PiP, acessório essencial para gerenciar instalações de bibliotecas como Pygame dentre outras.</p>
+<h2 id="instalando-o-pip">Instalando o PiP</h2>
+<p>Para instalar o PiP utilizando o terminal é muito fácil.
+No Ubuntu digite:</p>
+
+<blockquote>
+  <p>sudo apt install python3-pip</p>
+</blockquote>
+
+<p>Neste caso instalaremos o PiP para seu python versão 3, no Ubuntu.</p>
+
+<p>Diferentemente será no Archlinux conforme vemos:</p>
+
+<blockquote>
+  <p>sudo pacman -S python-pip</p>
+</blockquote>
+
+<p>Deste modo, não precisamos especificar o python para a versão 3 pois ele já é por padrão.</p>
+
+<h2 id="instalando-pygame-através-do-pip">Instalando Pygame através do PiP</h2>
+<p>Após instalado o PiP, vamos instalar o Pygame.
+No Ubuntu digite:</p>
+
+<blockquote>
+  <p>python3 -m pip install pygame –user</p>
+</blockquote>
+
+<p>Perceba que estamos instalando a biblioteca pygame apenas para o usuário, pela fato de utilizarmos o argumento “–user”.</p>
+
+<p>No Archlinux digite:</p>
+
+<blockquote>
+  <p>python -m pip install pygame –user</p>
+</blockquote>
+
+<p>Praticamente identico, apenas retirando o 3, pois no arch não precisamos especificar o python 3 pois o mesmo já é por padrão.</p>
+
+<h2 id="bônus-instalando-no-pycharm">Bônus: Instalando no Pycharm</h2>
+
+<p>Entendo que você já tenha o Pycharm instalado em sua distro, desta forma siga os passos:</p>
+
+<blockquote>
+  <p>Passo 1: Clique em File</p>
+</blockquote>
+
+<blockquote>
+  <p>Passo 2: Clique em Settings</p>
+</blockquote>
+
+<blockquote>
+  <p>Passo 3: Clique em Project: (Nome do seu projeto)</p>
+</blockquote>
+
+<blockquote>
+  <p>Passo 4: Clique em Project Interpreter</p>
+</blockquote>
+
+<blockquote>
+  <p>Passo 5: Clique no ícone de + (mais) ao lado direito</p>
+</blockquote>
+
+<blockquote>
+  <p>Passo 6: Digite Pygame no campo de busca</p>
+</blockquote>
+
+<blockquote>
+  <p>Passo 7: Clique em Install Package e AGUARDE até a tela verde de instalação concluída.</p>
+</blockquote>
+
+<p>Pronto, após isso feche a janela e seu Pycharm está configurado com o pygame.</p>
+
+<p><img src="/assets/img/pycharm.png" alt="Pycharm Pygame" /></p>
+
+<p>Obrigado e bons estudos.</p>
+:ET
