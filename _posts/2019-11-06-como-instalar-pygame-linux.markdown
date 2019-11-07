@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Como instalar Pygame no Linux
 date: 2019-11-06 17:32:20 +0300
@@ -36,7 +36,7 @@ No Archlinux digite:
 
 >python -m pip install pygame --user
 
-Praticamente identico, apenas retirando o 3, pois no arch não precisamos especificar o python 3 pois o mesmo já é por padrão.
+Praticamente idêntico, apenas retirando o 3, pois no arch não precisamos especificar o python 3 pois o mesmo já é por padrão.
 
 ## Bônus: Instalando no Pycharm
 

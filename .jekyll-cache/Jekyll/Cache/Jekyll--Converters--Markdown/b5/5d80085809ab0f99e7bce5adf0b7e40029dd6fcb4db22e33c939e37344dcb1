@@ -1,0 +1,66 @@
+I"	<p>Dando continuidade ao Pygame hoje falaremos como fazer seu primeiro “Hello World” no Pygame.
+Suponho que você já tenha o Pygame instalado.</p>
+<h2 id="importando-a-biblioteca-pygame">Importando a biblioteca Pygame</h2>
+<p>No Python a maneira de importar biblioteca é usando o import, como vemos:</p>
+
+<blockquote>
+  <p>import pygame</p>
+</blockquote>
+
+<p>Ao utilizar este comando você terá toda as funções/métodos do pygame em seu projeto.
+A partir de agora iremos analisar os principais comandos.</p>
+
+<h2 id="inicializando-pygame">Inicializando Pygame</h2>
+<p>A maneira correta de inicializar o Pygame é usando o comando:</p>
+<blockquote>
+  <p>pygame.init()</p>
+</blockquote>
+
+<p>Init dispõe de inicialização, desta forma seu “jogo” poderá usar as funções do pygame e distribuir em tela.</p>
+
+<p><img src="/blog/assets/img/hellopygame.png" alt="Pycharm Pygame" /></p>
+
+<p>Esta é a mensagem que deverá aparecer.</p>
+
+<h2 id="definindo-o-display">Definindo o Display</h2>
+<p>A partir de agora definiremos o display, desta maneira precisamos definir qual a resolução que sua tela/interface terá.
+Desta forma utilizamos:</p>
+<blockquote>
+  <p>pygame.display.set_mode(x, y)</p>
+</blockquote>
+
+<p>As variáveis de x e y definiram x como tamanho vertical e y como tamanho horizontal.
+Portanto, se queremos uma tela de proporção 640x480, ficará assim:</p>
+<blockquote>
+  <p>x = 640
+y = 480
+pygame.display.set_mode(x, y)</p>
+</blockquote>
+
+<p>Caso você não queira usar variáveis para sua proporção poderá usar assim:</p>
+<blockquote>
+  <p>pygame.display.set_mode((640, 480))</p>
+</blockquote>
+
+<p>Teremos portanto um display que rapidamente sumirá da tela por não termos um while.</p>
+
+<h2 id="manter-a-tela">Manter a tela</h2>
+<p>Para manter a tela precisamos de um while constante porém utilizando uma função do pygame chamada update.
+Desta forma deverá ficar assim</p>
+<blockquote>
+  <p>while 1:
+<br /> pygame.display.update()</p>
+</blockquote>
+
+<p>Pronto, desta forma temos o display constantemente na tela, embora não seja possível ainda fechar.
+O código inteiro deve ficar assim:</p>
+<blockquote>
+  <p>import pygame
+<br />pygame.init()
+<br />pygame.display.set_mode((640, 480))
+<br />while 1:
+<br /> pygame.display.update()</p>
+</blockquote>
+
+<p>Por enquanto é só, abraços.</p>
+:ET

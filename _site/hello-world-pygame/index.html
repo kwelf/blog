@@ -2,25 +2,25 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Como instalar Pygame no Linux - Olá, eu sou Diego Herculano!</title>
+	<title>Hello World no Pygame - Olá, eu sou Diego Herculano!</title>
 
   <!-- Edit site and author settings in `_config.yml` to make the social details your own -->
 
     <meta content="Olá, eu sou Diego Herculano!" property="og:site_name">
   
-    <meta content="Como instalar Pygame no Linux" property="og:title">
+    <meta content="Hello World no Pygame" property="og:title">
   
   
     <meta content="article" property="og:type">
   
   
-    <meta content="Como instalar Pygame no Linux utilizando Ubuntu ou Archlinux" property="og:description">
+    <meta content="Primeiros passos no Pygame" property="og:description">
   
   
-    <meta content="http://localhost:4000/como-instalar-pygame-linux/" property="og:url">
+    <meta content="http://localhost:4000/hello-world-pygame/" property="og:url">
   
   
-    <meta content="2019-11-06T11:32:20-03:00" property="article:published_time">
+    <meta content="2019-11-06T16:32:20-03:00" property="article:published_time">
     <meta content="http://localhost:4000/about/" property="article:author">
   
   
@@ -41,19 +41,19 @@
     <meta name="twitter:site" content="@">
     <meta name="twitter:creator" content="@twitter">
   
-    <meta name="twitter:title" content="Como instalar Pygame no Linux">
+    <meta name="twitter:title" content="Hello World no Pygame">
   
   
-    <meta name="twitter:url" content="http://localhost:4000/como-instalar-pygame-linux/">
+    <meta name="twitter:url" content="http://localhost:4000/hello-world-pygame/">
   
   
-    <meta name="twitter:description" content="Como instalar Pygame no Linux utilizando Ubuntu ou Archlinux">
+    <meta name="twitter:description" content="Primeiros passos no Pygame">
   
   
     <meta name="twitter:image:src" content="http://localhost:4000/blog/assets/img/pygame.png">
   
 
-	<meta name="description" content="Como instalar Pygame no Linux utilizando Ubuntu ou Archlinux">
+	<meta name="description" content="Primeiros passos no Pygame">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<meta property="og:image" content="">
@@ -121,98 +121,87 @@
     
     <div class="page-cover-image">
       <figure>
-        <img class="page-image" src=/blog/assets/img/pygame.png alt="Como instalar Pygame no Linux">
+        <img class="page-image" src=/blog/assets/img/pygame.png alt="Hello World no Pygame">
         
       </figure>
     </div> <!-- End Page Cover Image -->
     
     <div class="wrap-content">
       <header class="header-page">
-        <h1 class="page-title">Como instalar Pygame no Linux</h1>
+        <h1 class="page-title">Hello World no Pygame</h1>
         <div class="page-date"><span>2019, Nov 06&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
       </header>
-      <p>Olá, seja bem vindo ao meu primeiro post no blog. Hoje iremos falar do Pygame e como instalar no seu Linux. Será uma tarefa simples, tenha certeza disso. 
-A partir daqui eu irei levar em conta que você já instalou o python em sua distro.
-Em primeiro lugar iremos instalar o PiP, acessório essencial para gerenciar instalações de bibliotecas como Pygame dentre outras.</p>
-<h2 id="instalando-o-pip">Instalando o PiP</h2>
-<p>Para instalar o PiP utilizando o terminal é muito fácil.
-No Ubuntu digite:</p>
+      <p>Dando continuidade ao Pygame hoje falaremos como fazer seu primeiro “Hello World” no Pygame.
+Suponho que você já tenha o Pygame instalado.</p>
+<h2 id="importando-a-biblioteca-pygame">Importando a biblioteca Pygame</h2>
+<p>No Python a maneira de importar biblioteca é usando o import, como vemos:</p>
 
 <blockquote>
-  <p>sudo apt install python3-pip</p>
+  <p>import pygame</p>
 </blockquote>
 
-<p>Neste caso instalaremos o PiP para seu python versão 3, no Ubuntu.</p>
+<p>Ao utilizar este comando você terá toda as funções/métodos do pygame em seu projeto.
+A partir de agora iremos analisar os principais comandos.</p>
 
-<p>Diferentemente será no Archlinux conforme vemos:</p>
-
+<h2 id="inicializando-pygame">Inicializando Pygame</h2>
+<p>A maneira correta de inicializar o Pygame é usando o comando:</p>
 <blockquote>
-  <p>sudo pacman -S python-pip</p>
+  <p>pygame.init()</p>
 </blockquote>
 
-<p>Deste modo, não precisamos especificar o python para a versão 3 pois ele já é por padrão.</p>
+<p>Init dispõe de inicialização, desta forma seu “jogo” poderá usar as funções do pygame e distribuir em tela.</p>
 
-<h2 id="instalando-pygame-através-do-pip">Instalando Pygame através do PiP</h2>
-<p>Após instalado o PiP, vamos instalar o Pygame.
-No Ubuntu digite:</p>
+<p><img src="/blog/assets/img/hellopygame.png" alt="Pycharm Pygame" /></p>
 
+<p>Esta é a mensagem que deverá aparecer.</p>
+
+<h2 id="definindo-o-display">Definindo o Display</h2>
+<p>A partir de agora definiremos o display, desta maneira precisamos definir qual a resolução que sua tela/interface terá.
+Desta forma utilizamos:</p>
 <blockquote>
-  <p>python3 -m pip install pygame –user</p>
+  <p>pygame.display.set_mode(x, y)</p>
 </blockquote>
 
-<p>Perceba que estamos instalando a biblioteca pygame apenas para o usuário, pela fato de utilizarmos o argumento “–user”.</p>
-
-<p>No Archlinux digite:</p>
-
+<p>As variáveis de x e y definiram x como tamanho vertical e y como tamanho horizontal.
+Portanto, se queremos uma tela de proporção 640x480, ficará assim:</p>
 <blockquote>
-  <p>python -m pip install pygame –user</p>
+  <p>x = 640
+y = 480
+pygame.display.set_mode(x, y)</p>
 </blockquote>
 
-<p>Praticamente idêntico, apenas retirando o 3, pois no arch não precisamos especificar o python 3 pois o mesmo já é por padrão.</p>
-
-<h2 id="bônus-instalando-no-pycharm">Bônus: Instalando no Pycharm</h2>
-
-<p>Entendo que você já tenha o Pycharm instalado em sua distro, desta forma siga os passos:</p>
-
+<p>Caso você não queira usar variáveis para sua proporção poderá usar assim:</p>
 <blockquote>
-  <p>Passo 1: Clique em File</p>
+  <p>pygame.display.set_mode((640, 480))</p>
 </blockquote>
 
+<p>Teremos portanto um display que rapidamente sumirá da tela por não termos um while.</p>
+
+<h2 id="manter-a-tela">Manter a tela</h2>
+<p>Para manter a tela precisamos de um while constante porém utilizando uma função do pygame chamada update.
+Desta forma deverá ficar assim</p>
 <blockquote>
-  <p>Passo 2: Clique em Settings</p>
+  <p>while 1:
+<br /> pygame.display.update()</p>
 </blockquote>
 
+<p>Pronto, desta forma temos o display constantemente na tela, embora não seja possível ainda fechar.
+<br />O código inteiro deve ficar assim:</p>
 <blockquote>
-  <p>Passo 3: Clique em Project: (Nome do seu projeto)</p>
+  <p>import pygame
+<br />pygame.init()
+<br />pygame.display.set_mode((640, 480))
+<br />while 1:
+<br /> pygame.display.update()</p>
 </blockquote>
 
-<blockquote>
-  <p>Passo 4: Clique em Project Interpreter</p>
-</blockquote>
-
-<blockquote>
-  <p>Passo 5: Clique no ícone de + (mais) ao lado direito</p>
-</blockquote>
-
-<blockquote>
-  <p>Passo 6: Digite Pygame no campo de busca</p>
-</blockquote>
-
-<blockquote>
-  <p>Passo 7: Clique em Install Package e AGUARDE até a tela verde de instalação concluída.</p>
-</blockquote>
-
-<p>Pronto, após isso feche a janela e seu Pycharm está configurado com o pygame.</p>
-
-<p><img src="/blog/assets/img/pycharm.png" alt="Pycharm Pygame" /></p>
-
-<p>Obrigado e bons estudos.</p>
+<p>Por enquanto é só, abraços.</p>
 
       <div class="page-footer">
         <div class="page-share">
-          <a href="https://twitter.com/intent/tweet?text=Como instalar Pygame no Linux&url=http://localhost:4000/como-instalar-pygame-linux/" title="Share on Twitter" rel="nofollow" target="_blank">Twitter</a>
-          <a href="https://facebook.com/sharer.php?u=http://localhost:4000/como-instalar-pygame-linux/" title="Share on Facebook" rel="nofollow" target="_blank">Facebook</a>
-          <a href="https://plus.google.com/share?url=http://localhost:4000/como-instalar-pygame-linux/" title="Share on Google+" rel="nofollow" target="_blank">Google+</a>
+          <a href="https://twitter.com/intent/tweet?text=Hello World no Pygame&url=http://localhost:4000/hello-world-pygame/" title="Share on Twitter" rel="nofollow" target="_blank">Twitter</a>
+          <a href="https://facebook.com/sharer.php?u=http://localhost:4000/hello-world-pygame/" title="Share on Facebook" rel="nofollow" target="_blank">Facebook</a>
+          <a href="https://plus.google.com/share?url=http://localhost:4000/hello-world-pygame/" title="Share on Google+" rel="nofollow" target="_blank">Google+</a>
         </div>
         <div class="page-tag">
           
