@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Listas em Python - Olá, eu sou Diego Herculano!</title>
+
+  <!-- Edit site and author settings in `_config.yml` to make the social details your own -->
+
+    <meta content="Olá, eu sou Diego Herculano!" property="og:site_name">
+  
+    <meta content="Listas em Python" property="og:title">
+  
+  
+    <meta content="article" property="og:type">
+  
+  
+    <meta content="Aprendendo a fazer listas em python" property="og:description">
+  
+  
+    <meta content="http://localhost:4000/lista-em-python/" property="og:url">
+  
+  
+    <meta content="2019-11-07T10:32:20-03:00" property="article:published_time">
+    <meta content="http://localhost:4000/about/" property="article:author">
+  
+  
+    <meta content="http://localhost:4000/blog/assets/img/python.png" property="og:image">
+  
+  
+    
+  
+  
+    
+    <meta content="Python" property="article:tag">
+    
+    <meta content="Listas" property="article:tag">
+    
+  
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@">
+    <meta name="twitter:creator" content="@twitter">
+  
+    <meta name="twitter:title" content="Listas em Python">
+  
+  
+    <meta name="twitter:url" content="http://localhost:4000/lista-em-python/">
+  
+  
+    <meta name="twitter:description" content="Aprendendo a fazer listas em python">
+  
+  
+    <meta name="twitter:image:src" content="http://localhost:4000/blog/assets/img/python.png">
+  
+
+	<meta name="description" content="Aprendendo a fazer listas em python">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta property="og:image" content="">
+	<link rel="shortcut icon" href="/blog/assets/img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="/blog/assets/img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/blog/assets/img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/blog/assets/img/favicon/apple-touch-icon-144x144.png">
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#263959">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#263959">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#263959">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="/blog/assets/fonts/font-awesome/css/font-awesome.min.css">
+	<!-- Styles -->
+	<link rel="stylesheet" href="/blog/assets/css/main.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <aside class="sidebar">
+  <header>
+    <div class="about">
+      <div class="cover-author-image">
+        <a href="/blog/"><img src="/blog/assets/img/diego.jpeg" alt="Diego Herculano"></a>
+      </div>
+      <div class="author-name">Diego Herculano</div>
+      <p>Estudante de Sistemas de Informação e programador. Sempre com fome de aprender!</p>
+    </div>
+  </header> <!-- End Header -->
+  <footer>
+    <section class="contact">
+      <h3 class="contact-title">Contact me</h3>
+      <ul>
+        
+          <li><a href="https://twitter.com/twitter" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        
+        
+          <li><a href="https://facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        
+        
+          <li class="github"><a href="http://github.com/kwelf" target="_blank"><i class="fa fa-github"></i></a></li>
+        
+        
+          <li class="linkedin"><a href="https://in.linkedin.com/in/diego-herculano-7ba5a955" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+        
+        
+          <li class="email"><a href="mailto:diegoherculanojp@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
+        
+      </ul>
+    </section> <!-- End Section Contact -->
+    <div class="copyright">
+      <p>2019 &copy; Diego Herculano</p>
+    </div>
+  </footer> <!-- End Footer -->
+</aside> <!-- End Sidebar -->
+<div class="content-box clearfix">
+  <article class="article-page">
+  <div class="page-content">
+    
+    <div class="page-cover-image">
+      <figure>
+        <img class="page-image" src=/blog/assets/img/python.png alt="Listas em Python">
+        
+      </figure>
+    </div> <!-- End Page Cover Image -->
+    
+    <div class="wrap-content">
+      <header class="header-page">
+        <h1 class="page-title">Listas em Python</h1>
+        <div class="page-date"><span>2019, Nov 07&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+      </header>
+      <p>Fazer listas em python é muito simples, pois diferente de outras linguagens com sintaxe mais complexas o python nos facilita demais.
+Não precisamos definir o tipo da lista pois o python recebe qualquer tipo, por exemplo podemos colocar integer e String numa mesma lista.</p>
+
+<h2 id="introdução">Introdução</h2>
+<p>Temos que entender que toda lista guarda espaços na memória, definidos pelo usuário ou pelo uso. Desta forma, tais espaços são tratados como índices. 
+Veja o exemplo a seguir:</p>
+<blockquote>
+  <p>nome = [‘Carlos’, ‘Fabio’, ‘Marcos’]</p>
+</blockquote>
+
+<p>Perceba que esta lista contém 3 elementos. Tais elementos são contados como índices, tendo como partida o número 0. Portanto, para acessarmos a lista através dos índices deveremos utilizarmos assim:</p>
+<blockquote>
+  <p>nome[índice]</p>
+</blockquote>
+
+<p>Então, se por exemplo queremos imprimir na tela o primeiro nome da lista, que neste caso é Carlos, deveremos utilizar assim:</p>
+<blockquote>
+  <p>print(nome[0])</p>
+</blockquote>
+
+<h2 id="lista-infinita">Lista infinita</h2>
+<p>Para criarmos uma lista infinita, ou seja, uma lista que comporte vários elementos sem uma definição de limite, devemos primeiro acrescentar a criação dela conforme vemos a seguir:</p>
+<blockquote>
+  <p>nome = []</p>
+</blockquote>
+
+<p>Desta forma, criamos portanto uma nova lista chamada com a variável nome, e dentro dela podemos adicionar quantos itens quiser.
+Para adicionar itens é muito simples, utilizamos o método append, conforme vemos a seguir:</p>
+<blockquote>
+  <p>nome.append(‘Carlos’)</p>
+</blockquote>
+
+<p>Desta forma, o nome string Carlos estará no índice 0 e nossa lista ficará assim:</p>
+<blockquote>
+  <p>[‘Carlos’]</p>
+</blockquote>
+
+<p>Ao adicionar outro elemento como por exemplo:</p>
+<blockquote>
+  <p>nome.append(‘Fabio’)</p>
+</blockquote>
+
+<p>Nossa lista deverá ficar assim:</p>
+<blockquote>
+  <p>[‘Carlos’, ‘Fabio’]</p>
+</blockquote>
+
+<p>Portanto, a cada uso do append os itens/elementos adicionados ficarão no índice posterior.
+Por exemplo, para acessarmos a lista acima e imprimirmos na tela o índice 0 utilizamos assim:</p>
+<blockquote>
+  <p>print(nome[0])</p>
+</blockquote>
+
+<h2 id="conclusão">Conclusão</h2>
+<p>Concluindo então, o nosso código deverá ficar assim:</p>
+<blockquote>
+  <p>nome = []
+<br />nome.append(‘Carlos’)
+<br />nome.append(‘Fabio’)
+<br />print(nome)</p>
+</blockquote>
+
+<p>E será impresso na tela nossa lista assim:</p>
+<blockquote>
+  <p>[‘Carlos’, ‘Fabio’]</p>
+</blockquote>
+
+<p>Por hoje é só pessoal, obrigado.</p>
+
+
+      <div class="page-footer">
+        <div class="page-share">
+          <a href="https://twitter.com/intent/tweet?text=Listas em Python&url=http://localhost:4000/lista-em-python/" title="Share on Twitter" rel="nofollow" target="_blank">Twitter</a>
+          <a href="https://facebook.com/sharer.php?u=http://localhost:4000/lista-em-python/" title="Share on Facebook" rel="nofollow" target="_blank">Facebook</a>
+          <a href="https://plus.google.com/share?url=http://localhost:4000/lista-em-python/" title="Share on Google+" rel="nofollow" target="_blank">Google+</a>
+        </div>
+        <div class="page-tag">
+          
+            <a href="/blog/tags#Python" class="tag">&#35; Python</a>
+          
+            <a href="/blog/tags#Listas" class="tag">&#35; Listas</a>
+          
+        </div>
+      </div>
+      <section class="comment-area">
+  <div class="comment-wrapper">
+    
+    <div id="disqus_thread" class="article-comments"></div>
+    <script>
+      (function() {
+          var d = document, s = d.createElement('script');
+          s.src = '//diegoh.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    
+  </div>
+</section> <!-- End Comment Area -->
+
+    </div> <!-- End Wrap Content -->
+  </div> <!-- End Page Content -->
+</article> <!-- End Article Page -->
+
+</div>
+
+  </div>
+  
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', '', 'auto');
+  ga('send', 'pageview');
+</script> <!-- End Analytics -->
+
+</body>
+</html>
