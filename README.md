@@ -1,2 +1,2 @@
-# diegoh.github.io
+# bit.ly/diegohblog
 Blog Diego Herculano
